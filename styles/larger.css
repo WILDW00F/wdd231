@@ -1,0 +1,22 @@
+@media screen and (min-width:768px) {
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .top {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
+
+    #course-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}

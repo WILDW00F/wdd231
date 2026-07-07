@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thomas Dettmar | WDD231 Home</title>
+
+    <meta name="description" content="WDD231 course homepage">
+    <meta name="author" content="Your Name">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <img src="images/logo.svg" alt="Site Logo">
+            <span>Thomas Dettmar</span>
+        </div>
+
+        <button id="menu"></button>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="chamber/">Chamber</a></li>
+                <li><a href="final/">Final</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1>Home</h1>
+
+        <div class="top">
+
+            <section>
+                <h2>About Me</h2>
+
+                <p>
+                    Write your introduction here...
+                </p>
+
+            </section>
+
+            <section>
+
+                <h2>Student Photo</h2>
+
+                <img src="images/profile.webp" alt="Student Photo">
+
+            </section>
+
+        </div>
+
+        <section class="courses">
+
+            <h2>Web Certificate Courses</h2>
+
+            <div class="buttons">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+
+            <div id="course-container"></div>
+
+            <p>Total Credits: <span id="credits"></span></p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="socials">
+
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">X</a>
+
+        </div>
+
+        <p>
+            © <span id="currentyear"></span> Thomas Dettmar | Arizona, USA
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>
