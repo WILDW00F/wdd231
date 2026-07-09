@@ -67,3 +67,15 @@ function displayCourses(courseList) {
 }
 
 displayCourses(courses);
+
+document.querySelector("#all").addEventListener("click", () => {
+    displayCourses(courses);
+});
+
+document.querySelector("#wdd").addEventListener("click", () => {
+    displayCourses(courses.filter(course => course.subject === "WDD"));
+});
+
+document.querySelector("#cse").addEventListener("click", () => {
+    displayCourses(courses.filter(course => course.subject === "CSE"));
+});

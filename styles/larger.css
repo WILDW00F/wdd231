@@ -6,13 +6,38 @@
 
     .navigation {
         display: flex;
-        gap: 1rem;
+        justify-content: space-around;
+    }
+
+    .navigation li {
+        flex: 1;
+    }
+
+    .navigation a {
+        text-align: center;
+        color: white;
+        background: #333;
+    }
+
+    .navigation a:hover {
+        background: #555;
+    }
+
+    .navigation a.active {
+        background: #666666;
+        color: white;
     }
 
     .top {
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 1rem;
+        align-items: stretch;
+    }
+
+    .top section {
+        display: flex;
+        flex-direction: column;
     }
 
     #course-container {

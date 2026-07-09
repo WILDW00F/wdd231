@@ -15,11 +15,53 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: .75rem 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.logo img {
+    width: 55px;
+    height: auto;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav {
+    background: #333;
+    margin-bottom: 1rem;
 }
 
 .navigation {
-    display: none;
     list-style: none;
+    display: none;
+}
+
+.navigation.open {
+    display: block;
+}
+
+.navigation li {
+    border-top: 1px solid #555;
+}
+
+.navigation a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: .75rem 1rem;
+}
+
+.navigation a.active {
+    background: black;
+    color: white;
 }
 
 .navigation.open {
@@ -38,14 +80,59 @@ header {
     display: block;
 }
 
+@media (min-width:768px) {
+
+    .top {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+        align-items: start;
+    }
+
+}
+
 section {
+    border: 1px solid #ccc;
     margin: 1rem 0;
+    background: #eee;
+}
+
+section h2 {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+
+section p {
+    padding: 1rem;
+    line-height: 1.6;
+}
+
+section img {
+    display: block;
+    width: 220px;
+    max-width: 90%;
+    margin: 1rem auto;
 }
 
 .buttons {
     display: flex;
-    justify-content: space-between;
-    gap: .5rem;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.buttons button {
+    flex: 1;
+    padding: .75rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.courses p {
+    text-align: center;
+    margin: 1rem;
 }
 
 #course-container {
@@ -55,12 +142,36 @@ section {
 }
 
 #course-container div {
+    background: #bdbdbd;
+    border: 1px solid #999;
     padding: 1rem;
-    background: #ddd;
     text-align: center;
+    font-weight: bold;
 }
 
-.completed {
-    background: #004225;
+#course-container .completed {
+    background-color: #004225;
     color: white;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.socials img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease;
+}
+
+.socials img:hover {
+    transform: scale(1.1);
 }
