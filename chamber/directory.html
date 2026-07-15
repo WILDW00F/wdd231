@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gilbert Chamber of Commerce | Directory</title>
+
+    <meta name="description"
+        content="Browse the official business directory for the Gilbert Chamber of Commerce. Find local businesses, organizations, and member information.">
+    <meta name="author" content="Thomas Dettmar">
+
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Gilbert Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Supporting local businesses and strengthening our community.">
+    <meta property="og:image" content="images/logo.webp">
+    <meta property="og:url" content="https://wildw00f.github.io/wdd231/chamber/directory.html">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo-container">
+            <img src="images/logo.webp" alt="Gilbert Chamber Logo" width="60" height="60">
+            <div>
+                <h1>Gilbert</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+
+        <button id="menuBtn" aria-label="Open Navigation">
+            ☰
+        </button>
+
+        <nav id="primaryNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h2>Business Directory</h2>
+
+        <div class="directory-controls">
+            <button id="gridBtn">Grid</button>
+            <button id="listBtn">List</button>
+        </div>
+
+        <section id="members" class="grid">
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <section class="footer-contact">
+
+            <h3>Gilbert Chamber of Commerce</h3>
+
+            <p>123 Main Street</p>
+
+            <p>Gilbert, ST 12345</p>
+
+            <p>
+                <a href="mailto:info@gilbertchamber.org">
+                    info@gilbertchamber.org
+                </a>
+            </p>
+
+            <p>(555) 555-1234</p>
+
+        </section>
+
+        <section class="footer-social">
+
+            <a href="#" aria-label="Facebook">
+                <img src="images/facebook.svg" alt="Facebook" width="40" height="40">
+            </a>
+
+            <a href="#" aria-label="Instagram">
+                <img src="images/instagram.svg" alt="Instagram" width="40" height="40">
+            </a>
+
+            <a href="#" aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="40" height="40">
+            </a>
+
+        </section>
+
+        <section class="footer-info">
+
+            <p>
+                &copy; <span id="currentYear"></span>
+                Thomas Dettmar | WDD 231
+            </p>
+
+            <p id="lastModified"></p>
+
+        </section>
+
+    </footer>
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Solaire Bakery",
+    "address": "123 Main Street, Gilbert, ST 12345",
+    "phone": "(555) 123-4567",
+    "website": "https://www.solairebakery.com",
+    "image": "business1.webp",
+    "membership": 3,
+    "description": "Fresh breads, pastries, cakes, and custom desserts made daily."
+  },
+  {
+    "name": "Green Valley Pharmacy",
+    "address": "45 Oak Avenue, Gilbert, ST 12345",
+    "phone": "(555) 234-5678",
+    "website": "https://www.greenvalleypharmacy.com",
+    "image": "business2.webp",
+    "membership": 2,
+    "description": "Community pharmacy providing prescriptions, vaccinations, and wellness products."
+  },
+  {
+    "name": "Blue River Auto Repair",
+    "address": "89 River Road, Gilbert, ST 12345",
+    "phone": "(555) 345-6789",
+    "website": "https://www.blueriverauto.com",
+    "image": "business3.webp",
+    "membership": 1,
+    "description": "Complete automotive maintenance and repair services for all vehicle makes and models."
+  },
+  {
+    "name": "Evergreen Landscaping",
+    "address": "250 Pine Lane, Gilbert, ST 12345",
+    "phone": "(555) 456-7890",
+    "website": "https://www.evergreenlandscaping.com",
+    "image": "business4.webp",
+    "membership": 2,
+    "description": "Professional landscaping, lawn care, irrigation installation, and seasonal maintenance."
+  },
+  {
+    "name": "Tech Solutions LLC",
+    "address": "310 Innovation Drive, Gilbert, ST 12345",
+    "phone": "(555) 567-8901",
+    "website": "https://www.techsolutionsllc.com",
+    "image": "business5.webp",
+    "membership": 3,
+    "description": "IT consulting, computer repair, cybersecurity, and business technology solutions."
+  },
+  {
+    "name": "Mountain View Fitness",
+    "address": "72 Wellness Boulevard, Gilbert, ST 12345",
+    "phone": "(555) 678-9012",
+    "website": "https://www.mountainviewfitness.com",
+    "image": "business6.webp",
+    "membership": 1,
+    "description": "Modern fitness center offering personal training, group classes, and wellness programs."
+  },
+  {
+    "name": "Eddie's Coffee House",
+    "address": "18 Market Square, Gilbert, ST 12345",
+    "phone": "(555) 789-0123",
+    "website": "https://www.eddiescoffee.com",
+    "image": "business7.webp",
+    "membership": 3,
+    "description": "Locally roasted coffee, specialty drinks, breakfast, lunch, and community gathering space."
+  }
+]
