@@ -7,8 +7,8 @@
     --text-color: #222;
     --border-color: #dcdcdc;
 
-    --heading-font: "Trebuchet MS", sans-serif;
-    --body-font: Arial, Helvetica, sans-serif;
+    --heading-font: "Merriweather", serif;
+    --body-font: "Roboto", sans-serif;
 }
 
 * {
@@ -103,7 +103,8 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    background: rgba(255, 255, 255, .2);
+    background: #274c77;
+    color: white;
 }
 
 main {

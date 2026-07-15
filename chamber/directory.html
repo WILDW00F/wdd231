@@ -13,15 +13,29 @@
 
     <link rel="icon" href="favicon.ico">
 
-    <meta property="og:title" content="Gilbert Chamber of Commerce">
+    <meta property="og:title" content="Gilbert Chamber of Commerce Business Directory">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="Supporting local businesses and strengthening our community.">
-    <meta property="og:image" content="images/logo.webp">
+    <meta property="og:description"
+        content="Explore Gilbert Chamber of Commerce member businesses, discover local services, and connect with organizations that strengthen our community.">
+    <meta property="og:image" content="https://wildw00f.github.io/wdd231/chamber/images/logo.webp">
     <meta property="og:url" content="https://wildw00f.github.io/wdd231/chamber/directory.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Merriweather:wght@700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+
 </head>
 
 <body>
@@ -29,14 +43,17 @@
     <header>
 
         <div class="logo-container">
-            <img src="images/logo.webp" alt="Gilbert Chamber Logo" width="60" height="60">
+
+            <img src="images/logo.webp" alt="Gilbert Chamber of Commerce Logo" width="60" height="60">
+
             <div>
-                <h1>Gilbert</h1>
+                <p class="site-name">Gilbert</p>
                 <p>Chamber of Commerce</p>
             </div>
+
         </div>
 
-        <button id="menuBtn" aria-label="Open Navigation">
+        <button id="menuBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primaryNav">
             ☰
         </button>
 
@@ -53,7 +70,7 @@
 
     <main>
 
-        <h2>Business Directory</h2>
+        <h1>Gilbert Chamber of Commerce Directory</h1>
 
         <div class="directory-controls">
             <button id="gridBtn">Grid</button>
@@ -89,15 +106,15 @@
         <section class="footer-social">
 
             <a href="#" aria-label="Facebook">
-                <img src="images/facebook.svg" alt="Facebook" width="40" height="40">
+                <img src="images/facebook.svg" alt="Visit our Facebook page" width="40" height="40">
             </a>
 
             <a href="#" aria-label="Instagram">
-                <img src="images/instagram.svg" alt="Instagram" width="40" height="40">
+                <img src="images/instagram.svg" alt="Visit our Instagram page" width="40" height="40">
             </a>
 
             <a href="#" aria-label="LinkedIn">
-                <img src="images/linkedin.svg" alt="LinkedIn" width="40" height="40">
+                <img src="images/linkedin.svg" alt="Visit our LinkedIn page" width="40" height="40">
             </a>
 
         </section>
@@ -114,10 +131,6 @@
         </section>
 
     </footer>
-
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
-    <script src="scripts/footer.js" defer></script>
 
 </body>
 
