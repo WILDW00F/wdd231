@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gilbert Chamber of Commerce | Home</title>
+
+    <meta name="description"
+        content="Welcome to the Gilbert Chamber of Commerce. Discover local businesses, community events, weather information, and opportunities to grow your business.">
+
+    <meta name="author" content="Thomas Dettmar">
+
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Gilbert Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="Supporting local businesses and strengthening the Gilbert community.">
+    <meta property="og:image" content="https://wildw00f.github.io/wdd231/chamber/images/logo.webp">
+    <meta property="og:url" content="https://wildw00f.github.io/wdd231/chamber/index.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Merriweather:wght@700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo-container">
+
+            <img src="images/logo.webp"
+                alt="Gilbert Chamber of Commerce Logo"
+                width="60"
+                height="60">
+
+            <div>
+                <p class="site-name">Gilbert</p>
+                <p>Chamber of Commerce</p>
+            </div>
+
+        </div>
+
+        <button id="menuBtn"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="primaryNav">
+            ☰
+        </button>
+
+        <nav id="primaryNav">
+
+            <ul>
+
+                <li>
+                    <a href="index.html"
+                        class="active"
+                        aria-current="page">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="discover.html">
+                        Discover
+                    </a>
+                </li>
+
+                <li>
+                    <a href="directory.html">
+                        Directory
+                    </a>
+                </li>
+
+                <li>
+                    <a href="join.html">
+                        Join
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <picture>
+
+                <source
+                    srcset="images/hero-large.webp"
+                    media="(min-width: 900px)">
+
+                <source
+                    srcset="images/hero-medium.webp"
+                    media="(min-width: 600px)">
+
+                <img src="images/hero-small.webp"
+                    alt="Downtown Gilbert"
+                    width="1200"
+                    height="600">
+
+            </picture>
+
+            <div class="hero-content">
+
+                <h1>Gilbert Chamber of Commerce</h1>
+
+                <p>
+                    Connecting businesses, supporting growth,
+                    and strengthening our community.
+                </p>
+
+                <a class="cta-button" href="join.html">
+                    Join the Chamber
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="home-grid">
+
+            <section class="events card">
+
+                <h2>Current Events</h2>
+
+                <ul>
+
+                    <li>
+                        <strong>Business Networking Breakfast</strong><br>
+                        July 18 • 8:00 AM
+                    </li>
+
+                    <li>
+                        <strong>Small Business Workshop</strong><br>
+                        July 24 • 6:00 PM
+                    </li>
+
+                    <li>
+                        <strong>Community Summer Festival</strong><br>
+                        August 2 • All Day
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <section class="weather card">
+
+                <h2>Weather</h2>
+
+                <div id="weather">
+
+                    <p>Loading weather...</p>
+
+                </div>
+
+            </section>
+
+        </section>
+
+        <section class="spotlights">
+
+            <h2>Member Spotlights</h2>
+
+            <div id="spotlightCards"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <section class="footer-contact">
+
+            <h2>Gilbert Chamber of Commerce</h2>
+
+            <p>123 Main Street</p>
+
+            <p>Gilbert, ST 12345</p>
+
+            <p>
+                <a href="mailto:info@gilbertchamber.org">
+                    info@gilbertchamber.org
+                </a>
+            </p>
+
+            <p>(555) 555-1234</p>
+
+        </section>
+
+        <section class="footer-social">
+
+            <a href="#" aria-label="Facebook">
+                <img src="images/facebook.svg"
+                    alt="Facebook"
+                    width="40"
+                    height="40">
+            </a>
+
+            <a href="#" aria-label="Instagram">
+                <img src="images/instagram.svg"
+                    alt="Instagram"
+                    width="40"
+                    height="40">
+            </a>
+
+            <a href="#" aria-label="LinkedIn">
+                <img src="images/linkedin.svg"
+                    alt="LinkedIn"
+                    width="40"
+                    height="40">
+            </a>
+
+        </section>
+
+        <section class="footer-info">
+
+            <p>
+                &copy;
+                <span id="currentYear"></span>
+                Thomas Dettmar | WDD 231
+            </p>
+
+            <p id="lastModified"></p>
+
+        </section>
+
+    </footer>
+
+</body>
+
+</html>

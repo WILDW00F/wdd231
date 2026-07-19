@@ -47,7 +47,7 @@
         padding: 2rem;
     }
 
-    main h2 {
+    main h1 {
         text-align: left;
         margin-bottom: 2rem;
     }
@@ -111,6 +111,20 @@
     .footer-info {
         text-align: right;
     }
+
+    .hero-content h1 {
+    font-size: 3rem;
+    }
+
+    .home-grid {
+        grid-template-columns: 2fr 1fr;
+
+        align-items: start;
+    }
+
+    #spotlightCards {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -121,6 +135,10 @@
 
     #members.grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero-content h1 {
+    font-size: 3.5rem;
     }
 
 }

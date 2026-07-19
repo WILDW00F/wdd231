@@ -62,7 +62,7 @@ function displayMembers(members) {
         website.href = member.website;
         website.target = "_blank";
         website.rel = "noopener";
-        website.textContent = "Visit Website";
+        website.textContent = member.name;
 
         card.appendChild(image);
         card.appendChild(name);
