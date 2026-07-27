@@ -1,48 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you for applying to the Gilbert Chamber of Commerce">
+    <meta name="author" content="Your Name">
 
-    <title>Gilbert Chamber of Commerce | Directory</title>
-
-    <meta name="description"
-        content="Browse the official business directory for the Gilbert Chamber of Commerce. Find local businesses, organizations, and member information.">
-    <meta name="author" content="Thomas Dettmar">
-
-    <link rel="icon" href="favicon.ico">
-
-    <meta property="og:title" content="Gilbert Chamber of Commerce Business Directory">
-    <meta property="og:type" content="website">
-    <meta property="og:description"
-        content="Explore Gilbert Chamber of Commerce member businesses, discover local services, and connect with organizations that strengthen our community.">
-    <meta property="og:image" content="https://wildw00f.github.io/wdd231/chamber/images/logo.webp">
-    <meta property="og:url" content="https://wildw00f.github.io/wdd231/chamber/directory.html">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/styles2?family=Roboto:wght@400;500;700&family=Merriweather:wght@700&display=swap"
-        rel="stylesheet">
+    <title>Thank You | Gilbert Chamber of Commerce</title>
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
 
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
-    <script src="scripts/footer.js" defer></script>
+    <link rel="stylesheet" href="styles/join.css">
 
+    <script src="js/navigation.js" defer></script>
+    <script src="js/footer.js" defer></script>
+    <script src="js/thankyou.js" defer></script>
 </head>
 
 <body>
 
-    <header>
+<header>
 
-        <div class="logo-container">
+    <div class="logo-container">
 
             <img src="images/logo.webp" alt="Gilbert Chamber of Commerce Logo" width="60" height="60">
 
@@ -61,31 +42,33 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html" class="active" aria-current="page">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html" class="active" aria-current="page">Join</a></li>
             </ul>
         </nav>
+</header>
 
-    </header>
+<main>
 
-    <main>
+    <section class="join-form">
 
-        <h1>Gilbert Chamber of Commerce Directory</h1>
+        <h1>Thank You!</h1>
 
-        <div class="directory-controls">
-            <button id="gridBtn" type="button">Grid View</button>
-            <button id="listBtn" type="button">List View</button>
+        <p>
+            Thank you for submitting your Chamber membership application.
+            We appreciate your interest and will review your application soon.
+        </p>
+
+        <div id="results">
         </div>
 
-        <section id="members" class="grid">
+    </section>
 
-        </section>
+</main>
 
-    </main>
+<footer>
 
-    <footer>
-
-        <section class="footer-contact">
+    <section class="footer-contact">
 
             <p class="footer-title">Gilbert Chamber of Commerce</p>
 
@@ -130,8 +113,7 @@
 
         </section>
 
-    </footer>
+</footer>
 
 </body>
-
 </html>
