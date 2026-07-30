@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyWatchlist Site Plan</title>
+
+    <meta name="description"
+        content="Site planning document for the MyWatchlist web application.">
+    <meta name="author"
+        content="Thomas Dettmar">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/siteplan.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>MyWatchlist Site Plan</h1>
+
+    <p>
+        Planning document for the WDD231 Final Website Project
+    </p>
+
+</header>
+
+<main>
+
+<section>
+
+<h2>Site Name</h2>
+
+<h3>MyWatchlist</h3>
+
+<p>
+
+MyWatchlist is a personal entertainment tracking website that allows users
+to browse, organize, rank, and save movies, television shows, anime,
+and other media.
+
+The name was chosen because it immediately communicates the primary
+purpose of the website—creating and managing a personal watch list.
+
+</p>
+
+<p>
+
+Suggested domain:
+<strong>mywatchlist.com</strong>
+
+</p>
+
+</section>
+
+<section>
+
+<h2>Site Purpose</h2>
+
+<p>
+
+MyWatchlist provides a centralized location where users can:
+
+</p>
+
+<ul>
+
+<li>Browse a growing media library.</li>
+
+<li>View detailed information about every title.</li>
+
+<li>Search and filter movies and shows.</li>
+
+<li>Save favorites.</li>
+
+<li>Track what they have watched.</li>
+
+<li>Create unlimited custom tier lists.</li>
+
+<li>Receive featured recommendations.</li>
+
+<li>Store their personal collection using Local Storage.</li>
+
+</ul>
+
+<p>
+
+The website demonstrates modern JavaScript techniques including
+fetching JSON data, asynchronous programming, DOM manipulation,
+modal dialogs, array methods, ES Modules, and persistent client-side
+storage.
+
+</p>
+
+</section>
+
+<section>
+
+<h2>Target Audience Scenarios</h2>
+
+<ol>
+
+<li>
+How can I keep track of every anime I've finished watching?
+</li>
+
+<li>
+What Studio Ghibli movies haven't I watched yet?
+</li>
+
+<li>
+Can I rank every Marvel movie from best to worst?
+</li>
+
+<li>
+Which fantasy anime have I rated the highest?
+</li>
+
+<li>
+Where can I quickly find details about a movie before adding it to my watchlist?
+</li>
+
+</ol>
+
+</section>
+
+<section>
+
+<h2>Dynamic Tier List System</h2>
+
+<p>
+
+One of the primary features of MyWatchlist is its Dynamic Tier List System.
+
+Unlike traditional tier lists, users first create a tier list by selecting
+a media type and filter. The website automatically generates the available
+titles using the JSON media database.
+
+</p>
+
+<h3>Example Workflow</h3>
+
+<ol>
+
+<li>Create a new Tier List.</li>
+
+<li>Name the Tier List.</li>
+
+<li>Select a Media Type.</li>
+
+<li>Select a Filter Type.</li>
+
+<li>Select the desired filter value.</li>
+
+<li>The website loads matching titles automatically.</li>
+
+<li>Drag titles into S, A, B, C, D or F tiers.</li>
+
+<li>Save the finished tier list.</li>
+
+</ol>
+
+<h3>Supported Filters</h3>
+
+<ul>
+
+<li>Genre</li>
+
+<li>Studio</li>
+
+<li>Director</li>
+
+<li>Franchise</li>
+
+<li>Release Year</li>
+
+<li>Rating</li>
+
+<li>Movie</li>
+
+<li>TV Series</li>
+
+<li>Anime</li>
+
+</ul>
+
+<h3>Example Tier Lists</h3>
+
+<ul>
+
+<li>Fantasy Anime</li>
+
+<li>Romance Anime</li>
+
+<li>Marvel Movies</li>
+
+<li>Studio Ghibli Films</li>
+
+<li>Pixar Movies</li>
+
+<li>Christopher Nolan Movies</li>
+
+<li>Crime TV Shows</li>
+
+<li>Favorite Sitcoms</li>
+
+</ul>
+
+<p>
+
+Users may create an unlimited number of tier lists.
+
+</p>
+
+</section>
+
+<section>
+
+<h2>Planned Pages</h2>
+
+<h3>Home</h3>
+
+<ul>
+
+<li>Hero Banner</li>
+
+<li>Featured Picks</li>
+
+<li>Continue Watching</li>
+
+<li>Collection Statistics</li>
+
+<li>Featured Tier List</li>
+
+<li>Random Recommendation</li>
+
+</ul>
+
+<h3>Library</h3>
+
+<ul>
+
+<li>Media Browser</li>
+
+<li>Search</li>
+
+<li>Genre Filters</li>
+
+<li>Sorting</li>
+
+<li>Modal Details</li>
+
+<li>Favorites</li>
+
+<li>Watch Status</li>
+
+<li>Add to Tier List</li>
+
+</ul>
+
+<h3>Collection</h3>
+
+<ul>
+
+<li>Saved Favorites</li>
+
+<li>Watchlist</li>
+
+<li>Completed Titles</li>
+
+<li>Custom Tier Lists</li>
+
+<li>Create Tier List</li>
+
+<li>Edit Tier List</li>
+
+<li>Delete Tier List</li>
+
+<li>Statistics</li>
+
+</ul>
+
+</section>
+
+<section>
+
+    <h2>Color Scheme</h2>
+
+    <p>
+        MyWatchlist uses a modern dark theme inspired by streaming services and
+        developer dashboards. Blue is used for primary actions while purple
+        provides accent colors for highlights and featured content.
+    </p>
+
+    <div class="color-grid">
+
+        <div class="color-card background">
+
+            <div class="swatch"></div>
+
+            <h3>Background</h3>
+
+            <p>#0F172A</p>
+
+            <p>
+                Site background and page body.
+            </p>
+
+        </div>
+
+        <div class="color-card surface">
+
+            <div class="swatch"></div>
+
+            <h3>Surface</h3>
+
+            <p>#1E293B</p>
+
+            <p>
+                Cards, panels, sections, and navigation.
+            </p>
+
+        </div>
+
+        <div class="color-card primary">
+
+            <div class="swatch"></div>
+
+            <h3>Primary Blue</h3>
+
+            <p>#3B82F6</p>
+
+            <p>
+                Buttons, links, headings, and interactive elements.
+            </p>
+
+        </div>
+
+        <div class="color-card secondary">
+
+            <div class="swatch"></div>
+
+            <h3>Accent Purple</h3>
+
+            <p>#8B5CF6</p>
+
+            <p>
+                Featured content, highlights, and tier list accents.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+<h2>Wireframes</h2>
+
+<p>
+
+Final hand-drawn wireframes of the main site page.
+
+</p>
+
+<div class="wireframes">
+
+<div>
+
+<h3>Mobile Layout</h3>
+
+<img src="images/mobile-wireframe.jpg"
+     alt="Mobile Wireframe">
+
+</div>
+
+<div>
+
+<h3>Desktop Layout</h3>
+
+<img src="images/desktop-wireframe.jpg"
+     alt="Desktop Wireframe">
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+
+Thomas Dettmar • WDD231 Final Project Site Plan
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
