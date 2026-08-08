@@ -400,3 +400,124 @@ footer a {
 
     font-weight: bold;
 }
+
+.discover-main {
+    padding: 1rem;
+}
+
+.discover-main h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.visitor-message {
+    margin: 0 auto 1.5rem;
+    padding: 1rem;
+    max-width: 600px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+.discover-intro {
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+}
+
+.discover-intro h2 {
+    margin-bottom: 0.5rem;
+}
+
+.discover-intro p {
+    line-height: 1.6;
+}
+
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+.discover-card {
+    padding: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.discover-card:nth-child(1) {
+    grid-area: card1;
+}
+
+.discover-card:nth-child(2) {
+    grid-area: card2;
+}
+
+.discover-card:nth-child(3) {
+    grid-area: card3;
+}
+
+.discover-card:nth-child(4) {
+    grid-area: card4;
+}
+
+.discover-card:nth-child(5) {
+    grid-area: card5;
+}
+
+.discover-card:nth-child(6) {
+    grid-area: card6;
+}
+
+.discover-card:nth-child(7) {
+    grid-area: card7;
+}
+
+.discover-card:nth-child(8) {
+    grid-area: card8;
+}
+
+.discover-card h2 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.discover-card figure {
+    margin: 0 0 1rem;
+}
+
+.discover-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.discover-card address {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.discover-card p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.learn-more {
+    padding: 0.65rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
