@@ -1,0 +1,149 @@
+@media (max-width: 767px) {
+
+    .header-inner {
+        flex-wrap: wrap;
+    }
+
+    .site-nav {
+        flex-basis: 100%;
+    }
+
+    .site-nav ul {
+        margin-top: 0.75rem;
+    }
+
+    .site-nav a {
+        border-bottom: 1px solid var(--border);
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .hero-actions .button {
+        text-align: center;
+        width: 100%;
+    }
+
+    .section-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box .button {
+        width: 100%;
+    }
+
+    .media-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .media-card-content {
+        padding: 0.75rem;
+    }
+
+    .modal-content {
+        padding: 1rem;
+    }
+
+    .modal-body {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-poster {
+        max-width: 200px;
+    }
+
+    .tier-row {
+        min-height: 75px;
+    }
+
+    .tier-drop-zone {
+        min-height: 75px;
+    }
+
+    .tier-item img {
+        height: 80px;
+        width: 58px;
+    }
+
+    .tier-item {
+        width: 58px;
+    }
+
+    .tier-label {
+        flex-basis: 45px;
+    }
+
+    .recommendation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .recommendation-card {
+        grid-template-columns: 120px 1fr;
+    }
+
+    .recommendation-image {
+        min-height: 180px;
+    }
+
+    .recommendation-content {
+        padding: 1rem;
+    }
+
+    .recommendation-content h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .media-modal .modal-body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .media-modal .modal-poster {
+        grid-column: 1;
+        grid-row: 1;
+
+        width: 200px;
+        max-width: 200px;
+
+        justify-self: center;
+    }
+
+    .media-modal .modal-poster img {
+        width: 200px;
+        max-width: 200px;
+    }
+
+    .media-modal .modal-details {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .media-modal .modal-actions {
+        grid-column: 1;
+        grid-row: 3;
+
+        flex-direction: column;
+    }
+
+    .media-modal .modal-actions .button {
+        width: 100%;
+    }
+}

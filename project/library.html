@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyWatchlist | Library</title>
+
+    <meta
+        name="description"
+        content="Browse the MyWatchlist media library, search TV shows, movies, and anime, and discover something new."
+    >
+
+    <meta name="author" content="Thomas Dettmar">
+
+    <meta property="og:title" content="MyWatchlist | Library">
+    <meta
+        property="og:description"
+        content="Browse, search, and discover TV shows, movies, and anime."
+    >
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/library.css">
+
+    <script type="module" src="scripts/library.js"></script>
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a class="site-logo" href="index.html">
+            <span>My</span>Watchlist
+        </a>
+
+        <button
+            id="menu-button"
+            class="menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="site-nav"
+        >
+            ☰
+        </button>
+
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a class="active" href="library.html">Library</a>
+                </li>
+
+                <li>
+                    <a href="collection.html">Collection</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="page-heading">
+
+        <p class="eyebrow">DISCOVER</p>
+
+        <h1>Media Library</h1>
+
+        <p>
+            Browse, search, and discover TV shows, movies, and anime.
+        </p>
+
+    </section>
+
+
+    <section class="library-layout">
+
+        <aside class="library-filters">
+
+            <h2>Filters</h2>
+
+            <div class="filter-group">
+
+                <label for="search-input">
+                    Search
+                </label>
+
+                <input
+                    type="search"
+                    id="search-input"
+                    placeholder="Search titles..."
+                >
+
+            </div>
+
+
+            <div class="filter-group">
+
+                <label for="type-filter">
+                    Media Type
+                </label>
+
+                <select id="type-filter">
+
+                    <option value="all">
+                        All Media
+                    </option>
+
+                    <option value="TV Series">
+                        TV Series
+                    </option>
+
+                    <option value="TV Movie">
+                        TV Movies
+                    </option>
+
+                    <option value="Anime Series">
+                        Anime Series
+                    </option>
+
+                    <option value="Anime Movie">
+                        Anime Movies
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="filter-group">
+
+                <label for="genre-filter">
+                    Genre
+                </label>
+
+                <select id="genre-filter">
+
+                    <option value="all">
+                        All Genres
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="filter-group">
+
+                <label for="rating-filter">
+                    Minimum Rating
+                </label>
+
+                <select id="rating-filter">
+
+                    <option value="0">
+                        Any Rating
+                    </option>
+
+                    <option value="7">
+                        7.0+
+                    </option>
+
+                    <option value="8">
+                        8.0+
+                    </option>
+
+                    <option value="9">
+                        9.0+
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <button
+                id="clear-filters"
+                class="button secondary"
+                type="button"
+            >
+                Clear Filters
+            </button>
+
+        </aside>
+
+
+        <section class="library-results">
+
+            <div class="results-header">
+
+                <h2>Library</h2>
+
+                <p id="results-count">
+                    Loading...
+                </p>
+
+            </div>
+
+            <div id="library-grid" class="media-grid">
+                <!-- JavaScript -->
+            </div>
+
+        </section>
+
+    </section>
+
+</main>
+
+
+<dialog id="media-modal" class="media-modal">
+
+    <div class="modal-content">
+
+        <button
+            id="modal-close"
+            class="modal-close"
+            type="button"
+            aria-label="Close details"
+        >
+            &times;
+        </button>
+
+        <div id="modal-details">
+            <!-- JavaScript -->
+        </div>
+
+    </div>
+
+</dialog>
+
+
+<footer class="site-footer">
+
+    <div class="footer-inner">
+
+        <div>
+            <h2>MyWatchlist</h2>
+
+            <p>
+                Track, rank, and discover your favorite entertainment.
+            </p>
+        </div>
+
+        <div class="footer-links">
+
+            <a href="attributions.html">
+                Attributions
+            </a>
+
+            <a
+                href="https://github.com/WILDW00F/wdd231"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                GitHub
+            </a>
+
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                Video Demonstration
+            </a>
+
+        </div>
+
+    </div>
+
+    <p class="copyright">
+        &copy; 2026 Thomas Dettmar | WDD231
+    </p>
+
+</footer>
+
+</body>
+
+</html>

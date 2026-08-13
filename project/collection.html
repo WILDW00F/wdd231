@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyWatchlist | Collection</title>
+
+    <meta
+        name="description"
+        content="Manage your MyWatchlist favorites, watchlist, completed media, and custom media tier lists."
+    >
+
+    <meta name="author" content="Thomas Dettmar">
+
+    <meta property="og:title" content="MyWatchlist | Collection">
+
+    <meta
+        property="og:description"
+        content="Manage your favorites, watchlist, completed media, and custom media tier lists."
+    >
+
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/collection.css">
+
+    <script type="module" src="scripts/collection.js"></script>
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a class="site-logo" href="index.html">
+            <span>My</span>Watchlist
+        </a>
+
+        <button
+            id="menu-button"
+            class="menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="site-nav"
+        >
+            ☰
+        </button>
+
+        <nav
+            id="site-nav"
+            class="site-nav"
+            aria-label="Main navigation"
+        >
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="library.html">
+                        Library
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        class="active"
+                        href="collection.html"
+                    >
+                        Collection
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <!-- ==================================================
+         PAGE HEADING
+    =================================================== -->
+
+    <section class="page-heading">
+
+        <p class="eyebrow">
+            YOUR MEDIA
+        </p>
+
+        <h1>
+            My Collection
+        </h1>
+
+        <p>
+            Manage your favorites, watchlist, completed media,
+            and custom media tier lists.
+        </p>
+
+    </section>
+
+
+    <!-- ==================================================
+         FAVORITES
+    =================================================== -->
+
+    <section class="collection-section">
+
+        <div class="section-heading">
+
+            <div>
+
+                <p class="eyebrow">
+                    SAVED
+                </p>
+
+                <h2>
+                    Favorites
+                </h2>
+
+            </div>
+
+        </div>
+
+        <div
+            id="favorites-grid"
+            class="media-grid"
+        >
+            <!-- JavaScript -->
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         CONTINUE WATCHING
+    =================================================== -->
+
+    <section class="collection-section">
+
+        <div class="section-heading">
+
+            <div>
+
+                <p class="eyebrow">
+                    IN PROGRESS
+                </p>
+
+                <h2>
+                    Continue Watching
+                </h2>
+
+            </div>
+
+        </div>
+
+        <div
+            id="collection-watching"
+            class="media-grid"
+        >
+            <!-- JavaScript -->
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         COMPLETED
+    =================================================== -->
+
+    <section class="collection-section">
+
+        <div class="section-heading">
+
+            <div>
+
+                <p class="eyebrow">
+                    FINISHED
+                </p>
+
+                <h2>
+                    Completed
+                </h2>
+
+            </div>
+
+        </div>
+
+        <div
+            id="collection-completed"
+            class="media-grid"
+        >
+            <!-- JavaScript -->
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         TIER LISTS
+    =================================================== -->
+
+    <section class="collection-section tier-lists-section">
+
+        <div class="section-heading">
+
+            <div>
+
+                <p class="eyebrow">
+                    RANK YOUR FAVORITES
+                </p>
+
+                <h2>
+                    My Custom Tier Lists
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="tier-list-container"
+            class="tier-list-container"
+        >
+            <!-- JavaScript -->
+        </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         CREATE TIER LIST
+    =================================================== -->
+
+    <section class="collection-section">
+
+        <div class="section-heading">
+
+            <div>
+
+                <p class="eyebrow">
+                    CREATE
+                </p>
+
+                <h2>
+                    New Tier List
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <form
+            id="tier-form"
+            class="tier-form"
+        >
+
+            <div class="form-group">
+
+                <label for="tier-name">
+                    Tier List Name
+                </label>
+
+                <input
+                    type="text"
+                    id="tier-name"
+                    name="tier-name"
+                    required
+                    maxlength="50"
+                    placeholder="Example: Best Fantasy Anime"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="tier-type">
+                    Media Type
+                </label>
+
+                <select
+                    id="tier-type"
+                    name="tier-type"
+                    required
+                >
+
+                    <option value="">
+                        Select Type
+                    </option>
+
+                    <option value="all">
+                        All Media
+                    </option>
+
+                    <option value="Anime">
+                        Anime
+                    </option>
+
+                    <option value="TV Series">
+                        TV Series
+                    </option>
+
+                    <option value="TV Movie">
+                        TV Movies
+                    </option>
+
+                    <option value="Anime Series">
+                        Anime Series
+                    </option>
+
+                    <option value="Anime Movie">
+                        Anime Movies
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="tier-filter">
+                    Filter
+                </label>
+
+                <select
+                    id="tier-filter"
+                    name="tier-filter"
+                >
+
+                    <option value="genre">
+                        Genre
+                    </option>
+
+                    <option value="studio">
+                        Studio
+                    </option>
+
+                    <option value="rating">
+                        Rating
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="tier-filter-value">
+                    Filter Value
+                </label>
+
+                <select
+                    id="tier-filter-value"
+                    name="tier-filter-value"
+                >
+
+                    <option value="all">
+                        All
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="button"
+            >
+                Generate Tier List
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<!-- ==================================================
+     MEDIA MODAL
+=================================================== -->
+
+<dialog
+    id="media-modal"
+    class="media-modal"
+>
+
+    <div class="modal-content">
+
+        <button
+            id="modal-close"
+            class="modal-close"
+            type="button"
+            aria-label="Close details"
+        >
+            &times;
+        </button>
+
+        <div id="modal-details">
+            <!-- JavaScript -->
+        </div>
+
+    </div>
+
+</dialog>
+
+
+<footer class="site-footer">
+
+    <div class="footer-inner">
+
+        <div>
+
+            <h2>
+                MyWatchlist
+            </h2>
+
+            <p>
+                Track, rank, and discover your favorite entertainment.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="attributions.html">
+                Attributions
+            </a>
+
+            <a
+                href="https://github.com/WILDW00F/wdd231"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                GitHub
+            </a>
+
+            <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Video Demonstration
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <p class="copyright">
+        &copy; 2026 Thomas Dettmar | WDD231
+    </p>
+
+</footer>
+
+</body>
+
+</html>

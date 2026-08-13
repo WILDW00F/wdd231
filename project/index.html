@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyWatchlist | Track, Rank & Discover</title>
+
+    <meta
+        name="description"
+        content="MyWatchlist is a personal media tracking website for discovering, organizing, rating, and managing TV shows, movies, and anime."
+    >
+
+    <meta name="author" content="Thomas Dettmar">
+
+    <meta property="og:title" content="MyWatchlist">
+    <meta
+        property="og:description"
+        content="Track, rank, and discover TV shows, movies, and anime with MyWatchlist."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wildw00f.github.io/wdd231/project/">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a class="site-logo" href="index.html">
+            <span>My</span>Watchlist
+        </a>
+
+        <button
+            id="menu-button"
+            class="menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="site-nav"
+        >
+            ☰
+        </button>
+
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+
+            <ul>
+                <li>
+                    <a class="active" href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="library.html">Library</a>
+                </li>
+
+                <li>
+                    <a href="collection.html">Collection</a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<main>
+
+    <section class="hero">
+
+        <h1>Track. Rank. Discover.</h1>
+
+        <p>
+            Keep track of the TV shows, movies, and anime you love,
+            discover something new, and build your ultimate collection.
+        </p>
+
+        <div class="hero-actions">
+
+            <a class="button" href="library.html">
+                Browse Library
+            </a>
+
+            <a class="button secondary" href="collection.html">
+                My Collection
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="section-header">
+
+            <h2>Continue Watching</h2>
+
+            <a href="collection.html">
+                View Collection
+            </a>
+
+        </div>
+
+        <div id="continue-watching" class="media-grid">
+            <!-- JavaScript -->
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="section-header">
+
+            <h2>Featured Picks</h2>
+
+            <a href="library.html">
+                View Library
+            </a>
+
+        </div>
+
+        <div id="featured-picks" class="media-grid">
+            <!-- JavaScript -->
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="section-header">
+            <h2>Random Recommendation</h2>
+        </div>
+
+        <div id="recommendation"></div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="section-header">
+            <h2>Collection Statistics</h2>
+        </div>
+
+        <div id="collection-stats" class="stats-grid">
+            <!-- JavaScript -->
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="site-footer">
+
+    <div class="footer-inner">
+
+        <div>
+            <h2>MyWatchlist</h2>
+
+            <p>
+                Track, rank, and discover your favorite entertainment.
+            </p>
+        </div>
+
+        <div class="footer-links">
+
+            <a href="attributions.html">
+                Attributions
+            </a>
+
+            <a
+                href="https://github.com/WILDW00F/wdd231"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                GitHub
+            </a>
+
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                Video Demonstration
+            </a>
+
+        </div>
+
+    </div>
+
+    <p class="copyright">
+        &copy; 2026 Thomas Dettmar | WDD231
+    </p>
+
+</footer>
+
+</body>
+
+</html>
