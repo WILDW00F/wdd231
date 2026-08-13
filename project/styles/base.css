@@ -136,27 +136,6 @@ p {
     padding: 1rem;
 }
 
-
-/* =====================================================
-   LOGO
-===================================================== */
-
-.site-logo {
-    color: var(--text);
-    font-family: var(--heading-font);
-    font-size: 1.4rem;
-    font-weight: 700;
-}
-
-.site-logo span {
-    color: var(--primary);
-}
-
-.site-logo:hover {
-    color: var(--text);
-}
-
-
 /* =====================================================
    MOBILE NAVIGATION
 ===================================================== */
@@ -196,11 +175,8 @@ p {
 
 .site-nav a:hover,
 .site-nav a.active {
-    background: var(--surface-hover);
-    color: var(--text);
-}
-
-.site-nav a.active {
+    background: #1d4ed8;
+    color: white;
     border-left: 3px solid var(--primary);
 }
 
